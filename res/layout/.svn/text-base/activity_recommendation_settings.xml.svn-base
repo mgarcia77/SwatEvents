@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00A693"
+    tools:context=".RecommendationSettings" >
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent" 
+        android:orientation="vertical"                
+        android:padding="5dp">
+        
+        <RelativeLayout 
+            android:orientation="horizontal"
+            android:id="@+id/keywords"
+            android:layout_height="wrap_content" 
+		    android:layout_width="fill_parent"
+            >
+	        <TextView 
+	            android:id="@+id/you_like"
+	            android:text="@string/you_like"
+	            android:padding="5dp"
+	            
+	            android:textColor="#94121c"
+	            android:textSize="25sp"
+	            android:textStyle="bold"
+				android:shadowColor="#000000"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowRadius="1"			
+				android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"            
+	            />
+	        <EditText
+		        android:id="@+id/add_pref_text"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@+id/add_pref_button"
+		        android:layout_toRightOf="@id/you_like"
+		        android:hint="@string/add_pref" />
+
+	        <Button
+	            android:id="@id/add_pref_button"
+	            android:onClick="addPref"
+	            android:text="@string/add"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/button"
+	            style="@style/button_text"
+	            android:padding="5dp"
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"/>
+	            
+		</RelativeLayout>
+		<ListView   
+		        android:id="@+id/list_keywords" 
+		        android:layout_height="wrap_content" 
+		        android:layout_width="fill_parent"
+		        android:divider="#00A693"
+		        android:dividerHeight="1dp"
+		        android:padding="5dp"
+		        android:listSelector="@drawable/list_selector">
+		
+		    </ListView>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:layout_weight="1.25"
+         
+        android:orientation="vertical"                
+        android:padding="5dp">
+        
+	       
+<RelativeLayout 
+            android:orientation="horizontal"
+                        android:id="@+id/hidewords"
+            
+            android:layout_height="wrap_content" 
+		    android:layout_width="fill_parent"
+            >
+	         <TextView 
+	             android:id="@+id/you_dislike"
+	            android:text="@string/you_dislike"
+	            android:padding="5dp"
+	            
+	            android:textColor="#94121c"
+	            android:textSize="25sp"
+	            android:textStyle="bold"
+				android:shadowColor="#000000"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowRadius="1"			
+				android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"            
+	            />
+	        <EditText
+		        android:id="@+id/add_blocked_text"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@+id/block_button"
+		        android:layout_toRightOf="@id/you_dislike"
+		        android:hint="@string/add_blocked" />
+
+	        <Button
+	            android:id="@id/block_button"
+	            android:onClick="addBlocked"
+	            android:text="@string/add"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/button"
+	            style="@style/button_text"
+	            android:padding="5dp"
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"/>
+	            
+		</RelativeLayout>
+		<ListView   
+				android:id="@+id/list_hidewords"	
+				android:layout_height="wrap_content" 
+		        android:layout_width="fill_parent"
+		        android:divider="#00A693"
+		        android:dividerHeight="1dp"
+		        android:padding="5dp"
+		        android:listSelector="@drawable/list_selector">
+		
+		    </ListView>
+    </LinearLayout>
+</LinearLayout>

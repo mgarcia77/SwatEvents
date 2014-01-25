@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swat Events</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="recommendation_settings"> Recommendation settings </string>
+    <string name="info">  i  </string>
+    <string name="hide">  X  </string>
+    <string name="delete">  XX  </string>
+    <string name="add">  +  </string>
+    <string name="add_long"> Add event </string>
+    <string name="hide_long"> Hide event </string>
+    <string name="cancel"> Cancel </string>
+    <string name="calendar"> View my events </string>
+    <string name="map"> Find events near me </string>
+    <string name="switch_events_stream"> Switch to events stream view </string>
+    <string name="title_activity_personal_calendar">My Events</string>
+    <string name="title_activity_recommendation_settings">Recommendation Settings</string>
+    <string name="you_like"> You like: </string>
+    <string name="you_dislike"> You dislike: </string>
+    <string name="add_pref"> I like... </string>
+    <string name="add_blocked"> Yuck... </string>
+    <string name="title_activity_map_view">What\'s near me</string>
+    <string name="date">Today</string>
+    <string name="recommended_for_you"> Recommended for you </string>
+    <string name="all_events"> All events </string>
+    <string name="my_events"> My events </string>
+    <string name="show_all_events"> Show all events </string>
+    <string name="show_not_hidden"> Show your event stream </string>
+    
+    <style name="button_text">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        </style>
+
+</resources>
